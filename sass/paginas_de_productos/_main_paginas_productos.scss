@@ -1,0 +1,165 @@
+/*===============================================================================================*/
+/*ESTILOS PARA LAS PÁGINAS DE LOS PRODUCTOS*/
+/*===============================================================================================*/
+/*===============================================================================================*/
+ /*AQUÍ TENGO APLICADO GRID - AQUÍ TENGO APLICADO GRID - AQUÍ TENGO APLICADO GRID - AQUÍ TENGO APLICADO GRID*/
+/*===============================================================================================*/
+
+#main{
+
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "box1 box2 box3 box4"
+        "box5 box6 box7 box8";   
+        column-gap:2%;
+        grid-row-gap: 10%;
+        margin-top: 2%;
+        margin-left: 3%;
+        margin-right: 3%; 
+        margin-bottom: 3%; 
+        
+        figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            background-size: cover;
+        }
+
+        .box1{
+            grid-area: box1;
+        }
+        .box2{
+            grid-area: box2;
+        }
+        .box3{
+            grid-area: box3;
+        }
+        .box4{
+            grid-area: box4;
+        }
+        .box5{
+            grid-area: box5;
+        }
+        .box6{
+            grid-area: box6;
+        }
+        .box7{
+            grid-area: box7;
+        }
+        .box8{
+            grid-area: box8;
+        }
+        
+        .box_2doDulce{
+            grid-area: box7;
+        }
+        
+        .box_2doDulce_texto{
+            grid-area: box8;
+        }
+    }
+
+    .imagen img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+    }
+
+    h1{
+        font-size: 25px;
+        color: black;
+    }
+
+    h2{
+        font-size: 22px;
+        color: black;
+        margin-top: 4%;
+    }
+
+    button{
+        margin-top: 10%;
+        font-size: 15px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: rgb(12, 12, 12);
+        border-radius: 10%;
+        padding: 1%;
+    }
+
+    /*===============================================================================================*/
+    /*DISEÑO RESPONSIVE DEL MAIN DE LAS PÁGINAS DE PRODUCTOS*/
+    /*MODIFICACIÓN DE PROPIEDADES PARA CUANDO LA PÁGINA TENGA UN ANCHO MENOR O IGUAL A 850 PIXELES*/
+    /*===============================================================================================*/
+
+    @media (max-width: 850px){
+
+        .textosIndex_quienesSomos .encabezado{
+            font-size: 25px;
+        }
+        
+       .texto_index{
+            font-size: 25px;
+        }
+        
+        .slogan h1{
+
+            font-size: 25px;
+            font-weight: bold;
+            transition: 1s;  
+            margin-top: 350px; 
+            
+            &:hover{
+                font-size: 30px;
+                transition: 1s;
+            }
+        }
+
+        .productos{
+            display: grid;
+            grid-template-columns: repeat(2,45%);
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "box1 box2"
+            "box3 box4"
+            "box5 box6"
+            "box7 box8"; 
+            column-gap:5%;
+            grid-row-gap: 10%;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-right: 3%; 
+            margin-bottom: 3%;   
+            
+            h1{
+                font-size: 22px;
+                color: black;
+            }
+
+            h2{
+                font-size: 20px;
+                color: black;
+                margin-top: 6%;
+            }
+
+            button{
+                margin-top: 15%;
+            }
+        } 
+
+        .box_2doDulce{
+            grid-area: box3;
+        }
+        
+        .box_2doDulce_texto{
+            grid-area: box4;
+        }
+    }
+}
+
+

@@ -1,0 +1,14 @@
+/*===============================================================================================*/
+/*PARA FORMATEAR EL CSS QUE TIENE EL HTML APLICADO POR DEFECTO*/
+/*===============================================================================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /*Para suavisar la forma en la que se desplaza el sitio cuando un link hacia una sesión dentro de la misma página*/
+    scroll-behavior: smooth;
+    /*Toma en cuanta el alto del nav-bar al realizar scroll
+    scroll-padding-top: 150px;*/
+}
