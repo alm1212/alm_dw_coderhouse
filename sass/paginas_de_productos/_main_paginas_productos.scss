@@ -9,7 +9,7 @@
 
     .productos{
         display: grid;
-        grid-template-columns: repeat(4,25%);
+        grid-template-columns: repeat(4,23%);
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "box1 box2 box3 box4"
@@ -71,7 +71,7 @@
     }
 
     h1{
-        font-size: 25px;
+        font-size: 35px;
         color: black;
     }
 
@@ -93,8 +93,7 @@
     }
 
     /*===============================================================================================*/
-    /*DISEÑO RESPONSIVE DEL MAIN DE LAS PÁGINAS DE PRODUCTOS*/
-    /*MODIFICACIÓN DE PROPIEDADES PARA CUANDO LA PÁGINA TENGA UN ANCHO MENOR O IGUAL A 850 PIXELES*/
+    /*DISEÑO RESPONSIVE DEL MAIN */
     /*===============================================================================================*/
 
     @media (max-width: 850px){
@@ -110,9 +109,9 @@
         .slogan h1{
 
             font-size: 25px;
-            font-weight: bold;
             transition: 1s;  
-            margin-top: 350px; 
+            font-weight: bold;
+            margin-top: 400px; 
             
             &:hover{
                 font-size: 30px;
@@ -137,8 +136,9 @@
             margin-bottom: 3%;   
             
             h1{
-                font-size: 22px;
+                font-size: 35px;
                 color: black;
+                font-weight: bold;
             }
 
             h2{
@@ -150,15 +150,16 @@
             button{
                 margin-top: 15%;
             }
-        } 
 
-        .box_2doDulce{
-            grid-area: box3;
-        }
+            .box_2doDulce{
+                grid-area: box3;
+            }
+
+            .box_2doDulce_texto{
+                grid-area: box4;
+            }
+        }        
         
-        .box_2doDulce_texto{
-            grid-area: box4;
-        }
     }
 }
 

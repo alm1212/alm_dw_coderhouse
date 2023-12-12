@@ -11,4 +11,11 @@
     scroll-behavior: smooth;
     /*Toma en cuanta el alto del nav-bar al realizar scroll
     scroll-padding-top: 150px;*/
+    font-weight: lighter;
+}
+
+.pagina1, .paginaFinal{
+    background-image: url('../images/fondos/index.jpg');
+    background-size: cover;
+    background-position: center;
 }

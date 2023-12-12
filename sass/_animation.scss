@@ -1,0 +1,13 @@
+#header .caja_header h1{
+    animation: mover_izquierda_a_derecha 2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover_izquierda_a_derecha{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}

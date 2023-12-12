@@ -11,18 +11,35 @@
   scroll-behavior: smooth;
   /*Toma en cuanta el alto del nav-bar al realizar scroll
   scroll-padding-top: 150px;*/
+  font-weight: lighter;
 }
 
+.pagina1, .paginaFinal {
+  background-image: url("../images/fondos/index.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#header .caja_header h1 {
+  animation: mover_izquierda_a_derecha 2s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mover_izquierda_a_derecha {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
 /*===============================================================================================*/
 /*ESTILOS DEL HEADER*/
 /*===============================================================================================*/
 #header {
   width: 100%;
-  height: 150px;
-  background: url(../images/fondos/fondo_header.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: fixed;
+  height: 120px;
+  background-color: black;
   /*
   ======================================================================================================================================
   ESTO ES PARA QUITAR COSAS QUE BOOTSTRAP PUSO
@@ -37,7 +54,7 @@
 #header .caja_header {
   display: grid;
   grid-template-columns: repeat(5 20px);
-  grid-template-rows: 35px 35px 35px 35px;
+  grid-template-rows: 25px 25px 25px 25px;
   grid-template-areas: "box1 box2 box3 box4 box5" "box6 box7 box8 box9 box10" "box11 box12 box13 box14 box15" "box16 box17 box18 box19 box20";
   column-gap: 2%;
   row-gap: 3.5%;
@@ -57,19 +74,19 @@
   grid-area: box5;
   text-align: start;
   color: white;
-  font-size: 35px;
+  font-size: 20px;
 }
 #header .caja_header .segundoh1 {
   grid-area: box10;
   text-align: center;
   color: white;
-  font-size: 33px;
+  font-size: 20px;
 }
 #header .caja_header .tercerh1 {
   grid-area: box15;
   text-align: end;
   color: white;
-  font-size: 33px;
+  font-size: 20px;
   margin-right: 5%;
 }
 #header .caja_header nav ul li {
@@ -80,23 +97,11 @@
   transition: 1s;
 }
 #header .caja_header nav ul li a {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   padding-left: 5px;
   transition: 1s;
   padding: 10px;
-}
-#header .caja_header figure {
-  width: 100%;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-}
-#header .caja_header figure img {
-  width: 100%;
-  height: 100%;
 }
 #header .caja_header .container-fluid {
   background-color: black;
@@ -112,9 +117,6 @@
 }
 #header .box_redes_sociales_1ergrupo a {
   text-decoration: none;
-}
-#header .encabezado h1 {
-  font-weight: bold;
 }
 #header nav ul li a:hover {
   color: rgb(240, 109, 192);
@@ -179,12 +181,8 @@
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
-  /*overflow-x: hidden;*/
   background-color: #e5d9d9;
-  padding-top: 150px;
-  background-image: url("../images/fondos/index.jpg");
-  background-size: cover;
-  background-position: center;
+  margin-top: auto;
   /*===============================================================================================*/
   /*PSEUDOCLASES DEL MAIN*/
   /*===============================================================================================*/
@@ -198,14 +196,13 @@
   text-align: right;
   padding-right: 35%;
   font-size: 35px;
-  font-weight: bold;
 }
 #main .texto_index {
   text-align: left;
-  margin-left: 50%;
+  padding-left: 50%;
   font-size: 35px;
-  font-weight: bold;
   line-height: 160%;
+  font-weight: bold;
 }
 #main .slogan {
   margin-top: 70px;
@@ -213,7 +210,6 @@
 #main .slogan h1 {
   text-align: right;
   font-size: 35px;
-  font-weight: bold;
   transition: 1s;
 }
 #main .productos figure:hover {
@@ -238,13 +234,12 @@
 /*===============================================================================================*/
 #main {
   /*===============================================================================================*/
-  /*DISEÑO RESPONSIVE DEL MAIN DE LAS PÁGINAS DE PRODUCTOS*/
-  /*MODIFICACIÓN DE PROPIEDADES PARA CUANDO LA PÁGINA TENGA UN ANCHO MENOR O IGUAL A 850 PIXELES*/
+  /*DISEÑO RESPONSIVE DEL MAIN */
   /*===============================================================================================*/
 }
 #main .productos {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(4, 23%);
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "box1 box2 box3 box4" "box5 box6 box7 box8";
   column-gap: 2%;
@@ -298,7 +293,7 @@
   border-radius: 5%;
 }
 #main h1 {
-  font-size: 25px;
+  font-size: 35px;
   color: black;
 }
 #main h2 {
@@ -325,9 +320,9 @@
   }
   #main .slogan h1 {
     font-size: 25px;
-    font-weight: bold;
     transition: 1s;
-    margin-top: 350px;
+    font-weight: bold;
+    margin-top: 400px;
   }
   #main .slogan h1:hover {
     font-size: 30px;
@@ -346,8 +341,9 @@
     margin-bottom: 3%;
   }
   #main .productos h1 {
-    font-size: 22px;
+    font-size: 35px;
     color: black;
+    font-weight: bold;
   }
   #main .productos h2 {
     font-size: 20px;
@@ -357,10 +353,10 @@
   #main .productos button {
     margin-top: 15%;
   }
-  #main .box_2doDulce {
+  #main .productos .box_2doDulce {
     grid-area: box3;
   }
-  #main .box_2doDulce_texto {
+  #main .productos .box_2doDulce_texto {
     grid-area: box4;
   }
 }
@@ -370,10 +366,9 @@
 /*===============================================================================================*/
 #pie_de_pagina {
   width: 100%;
-  height: 150px;
+  height: auto;
   margin-top: auto;
   background-color: black;
-  overflow: scroll;
   /*===============================================================================================*/
   /*DISEÑO RESPONSIVE DEL FOOTER*/
   /*MODIFICACIÓN DE PROPIEDADES PARA CUANDO LA PÁGINA TENGA UN ANCHO MENOR O IGUAL A 850 PIXELES*/

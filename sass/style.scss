@@ -1,5 +1,6 @@
-@import "resetCss";
+@import "_resetCss";
+@import "_animation";
 @import "_header";
 @import "_main";
-@import "paginas_de_productos/main_paginas_productos";
-@import "footer";
+@import "../sass/paginas_de_productos/_main_paginas_productos";
+@import "_footer";

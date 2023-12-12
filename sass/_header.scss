@@ -5,16 +5,17 @@
 
 #header{
     width: 100%;
-    height: 150px;
-    background: url(../images/fondos/fondo_header.jpg)no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: fixed;    
-
+    height: 120px;
+    background-color: black;
+    // background: url(../images/fondos/fondo_header.jpg)no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // position: fixed;  
+    
     .caja_header{
         display: grid;
         grid-template-columns: repeat(5 20px);
-        grid-template-rows: 35px 35px 35px 35px;
+        grid-template-rows: 25px 25px 25px 25px;
         grid-template-areas: 
         "box1 box2 box3 box4 box5"
         "box6 box7 box8 box9 box10"
@@ -35,7 +36,7 @@
             grid-area: box5;
             text-align: start;
             color: white;
-            font-size: 35px;
+            font-size: 20px;
             
         }
 
@@ -43,14 +44,14 @@
             grid-area: box10;
             text-align: center;
             color: white;
-            font-size: 33px;
+            font-size: 20px;
         }
 
         .tercerh1{
             grid-area: box15;
             text-align: end;
             color: white;
-            font-size: 33px;
+            font-size: 20px;
             margin-right: 5%;
         }
 
@@ -62,25 +63,11 @@
             transition: 1s;
 
             a{
-                font-size: 25px;
+                font-size: 20px;
                 color: white;
                 padding-left: 5px;
                 transition: 1s;
                 padding: 10px;
-            }
-        }
-
-        figure{
-            width: 100%;
-            height: 150px;
-            display: flex;
-            justify-content: center;
-            align-items: center;    
-            background-size: cover;
-    
-            img{
-                width: 100%;
-                height: 100%;
             }
         }
 
@@ -114,9 +101,6 @@
         text-decoration: none;
     }
     
-    .encabezado h1{
-        font-weight: bold;
-    }
 
     /*
     ======================================================================================================================================
