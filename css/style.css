@@ -212,14 +212,6 @@
   font-size: 35px;
   transition: 1s;
 }
-#main .productos figure:hover {
-  width: 105%;
-  height: 105%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-}
 #main .slogan h1:hover {
   font-size: 45px;
   color: rgb(198, 6, 127);
@@ -252,6 +244,14 @@
 #main .productos figure {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+#main .productos figure:hover {
+  width: 105%;
+  height: 105%;
   display: flex;
   justify-content: center;
   align-items: center;

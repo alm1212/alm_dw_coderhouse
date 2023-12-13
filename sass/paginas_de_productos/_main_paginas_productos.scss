@@ -28,6 +28,15 @@
             justify-content: center;
             align-items: center;    
             background-size: cover;
+
+            &:hover{
+                width: 105%;
+                height: 105%;
+                display: flex;
+                justify-content: center;
+                align-items: center;    
+                background-size: cover;
+            }
         }
 
         .box1{
