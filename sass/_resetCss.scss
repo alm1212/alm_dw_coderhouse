@@ -14,8 +14,20 @@
     font-weight: lighter;
 }
 
+//esto es para quitar un efecto que trajo bootstrap
+body{
+    color: black;
+}
+
 .pagina1, .paginaFinal{
     background-image: url('../images/fondos/index.jpg');
     background-size: cover;
     background-position: center;
+}
+
+#navbarNav{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: end;
+    margin-right: 0px;
+    font-size: 2px;
 }

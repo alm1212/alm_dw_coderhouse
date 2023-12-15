@@ -40,7 +40,11 @@
         grid-area: box2;
         padding-top: 5%; 
         display: flex;
-        align-items: center;
+        align-items: center; 
+        
+        a{
+            text-decoration: none; //Esto es para quitar un efecto que trajo Bootstrap
+        }
     
         .box_redes_sociales_1ergrupo a img{
             padding-left: 10px;

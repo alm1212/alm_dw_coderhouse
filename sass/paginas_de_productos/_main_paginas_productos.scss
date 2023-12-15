@@ -28,15 +28,6 @@
             justify-content: center;
             align-items: center;    
             background-size: cover;
-
-            &:hover{
-                width: 105%;
-                height: 105%;
-                display: flex;
-                justify-content: center;
-                align-items: center;    
-                background-size: cover;
-            }
         }
 
         .box1{
@@ -98,7 +89,7 @@
         font-weight: bold;
         background-color: rgb(12, 12, 12);
         border-radius: 10%;
-        padding: 1%;
+        padding: 1%;        
     }
 
     /*===============================================================================================*/
@@ -107,15 +98,15 @@
 
     @media (max-width: 850px){
 
-        .textosIndex_quienesSomos .encabezado{
+        .main_textos_encabezado{
             font-size: 25px;
         }
         
-       .texto_index{
+       .main_textos_parrafo{
             font-size: 25px;
         }
         
-        .slogan h1{
+        .main_textos_slogan h1{
 
             font-size: 25px;
             transition: 1s;  

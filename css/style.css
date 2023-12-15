@@ -14,10 +14,21 @@
   font-weight: lighter;
 }
 
+body {
+  color: black;
+}
+
 .pagina1, .paginaFinal {
   background-image: url("../images/fondos/index.jpg");
   background-size: cover;
   background-position: center;
+}
+
+#navbarNav {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: end;
+  margin-right: 0px;
+  font-size: 2px;
 }
 
 #header .caja_header h1 {
@@ -33,6 +44,15 @@
     transform: translateY(0px);
   }
 }
+#main .productos figure:hover {
+  transition: 1s;
+  transform: scale(1.1, 1.1);
+}
+#main button:hover {
+  box-shadow: 5px 5px rgb(126, 123, 123);
+  transition: 1s;
+}
+
 /*===============================================================================================*/
 /*ESTILOS DEL HEADER*/
 /*===============================================================================================*/
@@ -187,32 +207,35 @@
   /*PSEUDOCLASES DEL MAIN*/
   /*===============================================================================================*/
 }
-#main .textosIndex_quienesSomos {
+#main .main_textos {
   width: 100%;
   height: 100vh;
   padding: 3%;
 }
-#main .textosIndex_quienesSomos .encabezado {
+#main .main_textos .main_textos_encabezado {
   text-align: right;
   padding-right: 35%;
   font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#main .texto_index {
+#main .main_textos_parrafo {
   text-align: left;
   padding-left: 50%;
   font-size: 35px;
   line-height: 160%;
   font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#main .slogan {
-  margin-top: 70px;
+#main .main_textos_slogan {
+  margin-top: auto;
+  padding-top: 40px;
 }
-#main .slogan h1 {
+#main .main_textos_slogan h1 {
   text-align: right;
   font-size: 35px;
   transition: 1s;
 }
-#main .slogan h1:hover {
+#main .main_textos_slogan h1:hover {
   font-size: 45px;
   color: rgb(198, 6, 127);
   transition: 1s;
@@ -244,14 +267,6 @@
 #main .productos figure {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-}
-#main .productos figure:hover {
-  width: 105%;
-  height: 105%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,19 +327,19 @@
   padding: 1%;
 }
 @media (max-width: 850px) {
-  #main .textosIndex_quienesSomos .encabezado {
+  #main .main_textos_encabezado {
     font-size: 25px;
   }
-  #main .texto_index {
+  #main .main_textos_parrafo {
     font-size: 25px;
   }
-  #main .slogan h1 {
+  #main .main_textos_slogan h1 {
     font-size: 25px;
     transition: 1s;
     font-weight: bold;
     margin-top: 400px;
   }
-  #main .slogan h1:hover {
+  #main .main_textos_slogan h1:hover {
     font-size: 30px;
     transition: 1s;
   }
@@ -400,6 +415,9 @@
   padding-top: 5%;
   display: flex;
   align-items: center;
+}
+#pie_de_pagina .box_redes_sociales a {
+  text-decoration: none;
 }
 #pie_de_pagina .box_redes_sociales .box_redes_sociales_1ergrupo a img {
   padding-left: 10px;
