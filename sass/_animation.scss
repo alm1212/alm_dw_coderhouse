@@ -13,15 +13,15 @@
 }
 
 #main{
-.productos{        
-    figure:hover{    
-            transition: 1s;
-            transform: scale(1.1,1.1);
+    .productos{        
+        figure:hover{    
+                transition: 1s;
+                transform: scale(1.1,1.1);
+            }
         }
-    }
 
-button:hover{
-    box-shadow: 5px 5px rgb(126, 123, 123);
-    transition: 1s;
-}
+    button:hover{
+        box-shadow: 5px 5px rgb(126, 123, 123);
+        transition: 1s;
+    }
 }
