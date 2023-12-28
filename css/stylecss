@@ -31,7 +31,7 @@ body {
   font-size: 2px;
 }
 
-#header .caja__header h1 {
+#header .caja_header h1 {
   animation: mover_izquierda_a_derecha 2s 1;
   animation-fill-mode: forwards;
 }
@@ -53,7 +53,11 @@ body {
   transition: 1s;
 }
 
-#pie_de_pagina .box__redes__sociales img:hover, #pie_de_pagina .box__contactos img:hover {
+#pie_de_pagina .box_redes_sociales img:hover {
+  transition: 1s;
+  transform: rotate(360deg);
+}
+#pie_de_pagina .box_contactos img:hover {
   transition: 1s;
   transform: rotate(360deg);
 }
@@ -75,13 +79,8 @@ body {
   HASTA AQUÍ LLEGARON LOS ESTILOS QUE FUERON PARA QUITAR LAS COSAS QUE BOOTSTRAP PUSO
   ======================================================================================================================================
   */
-  /*
-   ======================================================================================================================================
-   RESPONSIVE DEL HEADER
-   =======================================================================================================================================
-  */
 }
-#header .caja__header {
+#header .caja_header {
   display: grid;
   grid-template-columns: repeat(5 20px);
   grid-template-rows: 25px 25px 25px 25px;
@@ -96,49 +95,49 @@ body {
   ======================================================================================================================================
   */
 }
-#header .caja__header nav {
+#header .caja_header nav {
   grid-area: box20;
   text-align: end;
 }
-#header .caja__header .primerh1 {
+#header .caja_header .primerh1 {
   grid-area: box5;
   text-align: start;
   color: white;
   font-size: 20px;
 }
-#header .caja__header .segundoh1 {
+#header .caja_header .segundoh1 {
   grid-area: box10;
   text-align: center;
   color: white;
   font-size: 20px;
 }
-#header .caja__header .tercerh1 {
+#header .caja_header .tercerh1 {
   grid-area: box15;
   text-align: end;
   color: white;
   font-size: 20px;
   margin-right: 5%;
 }
-#header .caja__header nav ul li {
+#header .caja_header nav ul li {
   text-decoration: none;
   display: inline;
   font-size: 20px;
   color: white;
 }
-#header .caja__header nav ul li a {
+#header .caja_header nav ul li a {
   font-size: 20px;
   color: white;
   padding-left: 5px;
   transition: 1s;
   padding: 10px;
 }
-#header .caja__header nav ul li a:hover {
+#header .caja_header nav ul li a:hover {
   color: rgb(240, 109, 192);
   font-size: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
   transition: 1s;
 }
-#header .caja__header .container-fluid {
+#header .caja_header .container-fluid {
   background-color: black;
 }
 #header .navbar-nav {
@@ -216,18 +215,18 @@ body {
   /*PSEUDOCLASES DEL MAIN*/
   /*===============================================================================================*/
 }
-#main .main__textos {
+#main .main_textos {
   width: 100%;
   height: 100vh;
   padding: 3%;
 }
-#main .main__textos .main__textos__encabezado {
+#main .main_textos .main_textos_encabezado {
   text-align: right;
   padding-right: 35%;
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#main .main__textos__parrafo {
+#main .main_textos_parrafo {
   text-align: left;
   padding-left: 50%;
   font-size: 35px;
@@ -235,16 +234,16 @@ body {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
-#main .main__textos__slogan {
+#main .main_textos_slogan {
   margin-top: auto;
   padding-top: 40px;
 }
-#main .main__textos__slogan h1 {
+#main .main_textos_slogan h1 {
   text-align: right;
   font-size: 35px;
   transition: 1s;
 }
-#main .main__textos__slogan h1:hover {
+#main .main_textos_slogan h1:hover {
   font-size: 45px;
   color: rgb(198, 6, 127);
   transition: 1s;
@@ -281,11 +280,6 @@ body {
   align-items: center;
   background-size: cover;
 }
-#main .productos figure img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5%;
-}
 #main .productos .box1 {
   grid-area: box1;
 }
@@ -310,11 +304,16 @@ body {
 #main .productos .box8 {
   grid-area: box8;
 }
-#main .productos .box__2doDulce {
+#main .productos .box_2doDulce {
   grid-area: box7;
 }
-#main .productos .box__2doDulce__texto {
+#main .productos .box_2doDulce_texto {
   grid-area: box8;
+}
+#main .imagen img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
 }
 #main h1 {
   font-size: 35px;
@@ -336,19 +335,19 @@ body {
   padding: 1%;
 }
 @media (max-width: 850px) {
-  #main .main__textos__encabezado {
+  #main .main_textos_encabezado {
     font-size: 25px;
   }
-  #main .main__textos__parrafo {
+  #main .main_textos_parrafo {
     font-size: 25px;
   }
-  #main .main__textos__slogan h1 {
+  #main .main_textos_slogan h1 {
     font-size: 25px;
     transition: 1s;
     font-weight: bold;
     margin-top: 400px;
   }
-  #main .main__textos__slogan h1:hover {
+  #main .main_textos_slogan h1:hover {
     font-size: 30px;
     transition: 1s;
   }
@@ -358,7 +357,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "box1 box2" "box3 box4" "box5 box6" "box7 box8";
     column-gap: 5%;
-    grid-row-gap: 0%;
+    grid-row-gap: 10%;
     margin-top: 2%;
     margin-left: 3%;
     margin-right: 3%;
@@ -377,25 +376,11 @@ body {
   #main .productos button {
     margin-top: 15%;
   }
-  #main .productos .box__2doDulce {
+  #main .productos .box_2doDulce {
     grid-area: box3;
   }
-  #main .productos .box__2doDulce__texto {
+  #main .productos .box_2doDulce_texto {
     grid-area: box4;
-  }
-  #main .productos figure {
-    width: 70%;
-    height: 70%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    background-size: cover;
-  }
-  #main .productos figure img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    align-items: center;
   }
 }
 
@@ -414,16 +399,16 @@ body {
   /*MODIFICACIÓN DE PROPIEDADES PARA CUANDO LA PÁGINA TENGA UN ANCHO MENOR O IGUAL A 850 PIXELES*/
   /*===============================================================================================*/
 }
-#pie_de_pagina .box__footer {
+#pie_de_pagina .box_footer {
   display: grid;
   grid-template-columns: repeat(4 25px);
   grid-template-rows: 1fr;
   grid-template-areas: "box1 box2 box2 box3";
 }
-#pie_de_pagina .box__logo {
+#pie_de_pagina .box_logo {
   grid-area: box1;
 }
-#pie_de_pagina .box__logo figure {
+#pie_de_pagina .box_logo figure {
   padding-left: 15px;
   width: 100%;
   height: 140px;
@@ -431,71 +416,77 @@ body {
   justify-content: start;
   align-items: center;
 }
-#pie_de_pagina .box__logo figure img {
+#pie_de_pagina .box_logo figure img {
   width: 70%;
   height: 70%;
 }
-#pie_de_pagina .box__redes__sociales {
+#pie_de_pagina .box_redes_sociales {
   grid-area: box2;
   padding-top: 5%;
   display: flex;
   align-items: center;
 }
-#pie_de_pagina .box__redes__sociales a {
+#pie_de_pagina .box_redes_sociales a {
   text-decoration: none;
 }
-#pie_de_pagina .box__redes__sociales .box__redes__sociales__1ergrupo a img {
+#pie_de_pagina .box_redes_sociales .box_redes_sociales_1ergrupo a img {
   padding-left: 10px;
 }
-#pie_de_pagina .box__redes__sociales .box__redes__sociales__2dogrupo a img {
+#pie_de_pagina .box_redes_sociales .box_redes_sociales_2dogrupo a img {
   padding-left: 10px;
   margin-left: 1px;
 }
-#pie_de_pagina .box__contactos {
+#pie_de_pagina .box_contactos {
   grid-area: box3;
   display: flex;
   flex-direction: column;
 }
-#pie_de_pagina .box__contactos div h4 {
+#pie_de_pagina .box_contactos div h4 {
   color: white;
   font-size: 20px;
   padding-right: 5%;
   margin-bottom: 1%;
 }
-#pie_de_pagina .box__contactos__whatsApp, #pie_de_pagina .box__contactos__ubicacion, #pie_de_pagina .box__contactos__telefono {
-  /*===================V A R I A B L E S=======================*/
+#pie_de_pagina .box_contactos_whatsApp {
   display: flex;
   gap: 10px;
   padding-top: 10px;
   align-items: end;
 }
-#pie_de_pagina .box__contactos__telefono {
-  /*===================E X T E N D=======================*/
+#pie_de_pagina .box_contactos_telefono {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+  align-items: end;
 }
-#pie_de_pagina .box__contactos__ubicacion {
-  /*===================E X T E N D=======================*/
+#pie_de_pagina .box_contactos_ubicacion {
+  /*===================VARIABLES=======================*/
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+  align-items: end;
 }
 @media (max-width: 850px) {
-  #pie_de_pagina .box__logo figure {
+  #pie_de_pagina .box_logo figure {
     width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
   }
-  #pie_de_pagina .box__logo figure img {
+  #pie_de_pagina .box_logo figure img {
     width: 100%;
     height: 100%;
   }
-  #pie_de_pagina .box__logo figure img a {
+  #pie_de_pagina .box_logo figure img a {
     width: 100%;
     height: 100%;
   }
-  #pie_de_pagina .box__redes__sociales {
+  #pie_de_pagina .box_redes_sociales {
     flex-direction: column;
   }
-  #pie_de_pagina .box__contactos div h4 {
+  #pie_de_pagina .box_contactos div h4 {
     font-size: 10px;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stylecss.map */

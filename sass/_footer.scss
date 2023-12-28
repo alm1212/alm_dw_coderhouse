@@ -2,13 +2,20 @@
 /*ESTILOS DEL FOOTER*/
 /*===============================================================================================*/
 
+/*===================VARIABLES=======================*/
+$diseño_grupos_footer_display: flex;
+$diseño_grupos_footer_gap: 10px;
+$diseño_grupos_footer_padding-top: 10px;
+$diseño_grupos_footer_align-items: end;
+
+/*===================VARIABLES=======================*/
 #pie_de_pagina{
     width: 100%;
     height: auto;
     margin-top: auto;
     background-color: black;
 
-    .box_footer{
+    .box__footer{
         display: grid;
         grid-template-columns: repeat(4 25px);
         grid-template-rows: 1fr;
@@ -16,7 +23,7 @@
         "box1 box2 box2 box3";
     }
     
-    .box_logo{
+    .box__logo{
         grid-area: box1; 
     
         figure{
@@ -36,7 +43,7 @@
     }
     
     
-    .box_redes_sociales{
+    .box__redes__sociales{
         grid-area: box2;
         padding-top: 5%; 
         display: flex;
@@ -46,18 +53,18 @@
             text-decoration: none; //Esto es para quitar un efecto que trajo Bootstrap
         }
     
-        .box_redes_sociales_1ergrupo a img{
+        .box__redes__sociales__1ergrupo a img{
             padding-left: 10px;
         }
     
-        .box_redes_sociales_2dogrupo a img{
+        .box__redes__sociales__2dogrupo a img{
             padding-left: 10px;
             margin-left: 1px;
         }
     }
     
     
-    .box_contactos{
+    .box__contactos{
         grid-area: box3; 
         display: flex;
         flex-direction: column;
@@ -70,25 +77,25 @@
         }
     }
     
-    .box_contactos_whatsApp{
-        display: flex;
-        gap: 10px;
-        padding-top: 10px;
-        align-items: end;
+    .box__contactos__whatsApp{
+
+        /*===================V A R I A B L E S=======================*/
+        display: $diseño_grupos_footer_display;
+        gap: $diseño_grupos_footer_gap;
+        padding-top: $diseño_grupos_footer_padding-top;
+        align-items: $diseño_grupos_footer_align-items;
     }
     
-    .box_contactos_telefono{
-        display: flex;
-        gap: 10px;
-        padding-top: 10px;
-        align-items: end;
+    .box__contactos__telefono{
+
+        /*===================E X T E N D=======================*/
+        @extend .box__contactos__whatsApp;
     }
     
-    .box_contactos_ubicacion{
-        display: flex;
-        gap: 10px;
-        padding-top: 10px;
-        align-items: end;
+    .box__contactos__ubicacion{
+
+        /*===================E X T E N D=======================*/
+        @extend .box__contactos__whatsApp;
     }
 
     /*===============================================================================================*/
@@ -97,7 +104,7 @@
     /*===============================================================================================*/
 
     @media (max-width: 850px){
-        .box_logo figure{
+        .box__logo figure{
             width: 100px;
             height: 100px;
             display: flex;
@@ -114,11 +121,11 @@
             } 
         }
         
-        .box_redes_sociales{
+        .box__redes__sociales{
             flex-direction: column;
         }
 
-        .box_contactos div h4{
+        .box__contactos div h4{
             font-size: 10px;
         }
     }

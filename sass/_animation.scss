@@ -1,4 +1,4 @@
-#header .caja_header h1{
+#header .caja__header h1{
     animation: mover_izquierda_a_derecha 2s 1;
     animation-fill-mode: forwards;
 }
@@ -23,5 +23,15 @@
     button:hover{
         box-shadow: 5px 5px rgb(126, 123, 123);
         transition: 1s;
+    }
+}
+
+
+#pie_de_pagina{
+    .box__redes__sociales,  .box__contactos{
+        img:hover{
+            transition: 1s;
+            transform: rotate(360deg);
+        }
     }
 }

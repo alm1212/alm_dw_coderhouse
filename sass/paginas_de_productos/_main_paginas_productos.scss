@@ -28,6 +28,12 @@
             justify-content: center;
             align-items: center;    
             background-size: cover;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 5%;
+            }
         }
 
         .box1{
@@ -55,19 +61,13 @@
             grid-area: box8;
         }
         
-        .box_2doDulce{
+        .box__2doDulce{
             grid-area: box7;
         }
         
-        .box_2doDulce_texto{
+        .box__2doDulce__texto{
             grid-area: box8;
         }
-    }
-
-    .imagen img{
-        width: 100%;
-        height: 100%;
-        border-radius: 5%;
     }
 
     h1{
@@ -98,15 +98,15 @@
 
     @media (max-width: 850px){
 
-        .main_textos_encabezado{
+        .main__textos__encabezado{
             font-size: 25px;
         }
         
-       .main_textos_parrafo{
+       .main__textos__parrafo{
             font-size: 25px;
         }
         
-        .main_textos_slogan h1{
+        .main__textos__slogan h1{
 
             font-size: 25px;
             transition: 1s;  
@@ -129,12 +129,12 @@
             "box5 box6"
             "box7 box8"; 
             column-gap:5%;
-            grid-row-gap: 10%;
+            grid-row-gap: 0%;
             margin-top: 2%;
             margin-left: 3%;
             margin-right: 3%; 
-            margin-bottom: 3%;   
-            
+            margin-bottom: 3%; 
+
             h1{
                 font-size: 35px;
                 color: black;
@@ -151,15 +151,30 @@
                 margin-top: 15%;
             }
 
-            .box_2doDulce{
+            .box__2doDulce{
                 grid-area: box3;
             }
 
-            .box_2doDulce_texto{
+            .box__2doDulce__texto{
                 grid-area: box4;
             }
-        }        
-        
+
+            figure{
+                width: 70%;
+                height: 70%;
+                display: flex;
+                justify-content: end;
+                align-items: center;    
+                background-size: cover;
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5%;
+                    align-items: center;
+                }  
+            }
+        }  
     }
 }
 
