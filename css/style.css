@@ -147,58 +147,55 @@ body {
 #header .navbar-nav li a {
   text-decoration: none;
 }
-#header .box_redes_sociales_2dogrupo a {
-  text-decoration: none;
-}
-#header .box_redes_sociales_1ergrupo a {
+#header .box_redes_sociales_2dogrupo a, #header .box_redes_sociales_1ergrupo a {
   text-decoration: none;
 }
 @media (max-width: 850px) {
-  #header .caja_header .primerh1 {
+  #header .caja__header .primerh1 {
     font-size: 25px;
   }
-  #header .caja_header .tercerh1 {
+  #header .caja__header .tercerh1 {
     font-size: 25px;
     margin-right: 5%;
   }
-  #header .caja_header nav {
-    text-align: end;
+  #header .caja__header nav {
+    text-align: start;
   }
-  #header .caja_header nav ul li a {
+  #header .caja__header nav ul li a {
     font-size: 15px;
     padding: 2px;
   }
-  #header .caja_header nav ul li a:hover {
+  #header .caja__header nav ul li a:hover {
     font-size: 20px;
   }
 }
 @media (max-width: 500px) {
-  #header .caja_header .primerh1 {
+  #header .caja__header .primerh1 {
     grid-area: box1;
     text-align: center;
     font-size: 18px;
   }
-  #header .caja_header .segundoh1 {
+  #header .caja__header .segundoh1 {
     grid-area: box6;
     text-align: center;
     font-size: 18px;
   }
-  #header .caja_header .tercerh1 {
+  #header .caja__header .tercerh1 {
     grid-area: box11;
     text-align: center;
     font-size: 18px;
     margin-right: 5%;
   }
-  #header .caja_header nav {
+  #header .caja__header nav {
     text-align: center;
     grid-area: box16;
     font-size: 18px;
   }
-  #header .caja_header nav ul li a {
+  #header .caja__header nav ul li a {
     font-size: 12px;
     padding: 2px;
   }
-  #header .caja_header nav ul li a:hover {
+  #header .caja__header nav ul li a:hover {
     font-size: 10px;
   }
 }
